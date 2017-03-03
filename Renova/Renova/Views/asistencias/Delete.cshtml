@@ -1,0 +1,118 @@
+﻿@model RenoEnergy.Models.asistencia
+
+
+
+<h2>Eliminar</h2>
+
+<h3>Esta usted seguro de eliminar este alumno?</h3>
+<div>
+    <h4>Asistencias</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.alumno.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.alumno.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Lista", "Index")
+        </div>
+    }
+</div>

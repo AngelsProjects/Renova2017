@@ -141,6 +141,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\alumnoesController.cs" />
+    <Compile Include="Controllers\asistenciasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -178,11 +180,21 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\alumnoes\Create.cshtml" />
+    <Content Include="Views\alumnoes\Delete.cshtml" />
+    <Content Include="Views\alumnoes\Details.cshtml" />
+    <Content Include="Views\alumnoes\Edit.cshtml" />
+    <Content Include="Views\alumnoes\Index.cshtml" />
+    <Content Include="Views\asistencias\Create.cshtml" />
+    <Content Include="Views\asistencias\Delete.cshtml" />
+    <Content Include="Views\asistencias\Details.cshtml" />
+    <Content Include="Views\asistencias\Edit.cshtml" />
+    <Content Include="Views\asistencias\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<RenoEnergy.Models.asistencia>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Asistencias</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.alumno.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.A10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.alumno.nombre) @Html.DisplayFor(modelItem => item.alumno.apellidos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.IDAsistencia }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.IDAsistencia })
+        </td>
+    </tr>
+}
+
+</table>
