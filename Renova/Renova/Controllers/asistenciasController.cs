@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Renova.Models;
 
-namespace RenoEnergy.Controllers
+namespace Renova.Controllers
 {
     public class asistenciasController : Controller
     {
